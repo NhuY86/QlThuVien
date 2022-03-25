@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_LoaiSach">
+
+    <fragment
+        android:id="@+id/nav_PhieuMuon"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.ui.PhieuMuon.Fragment_Phieu_Muon"
+        android:label="Quản Lí Phiếu Mượn"
+        tools:layout="@layout/fragment__phieu__muon_fragment" />
+
+    <fragment
+        android:id="@+id/nav_LoaiSach"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.ui.LoaiSach.Fragment_Loai_Sach"
+        android:label="Quản Lí Loại Sách"
+        tools:layout="@layout/fragment__loai__sach_fragment" />
+
+    <fragment
+        android:id="@+id/nav_Sach"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.ui.Sach.FragmentSach"
+        android:label="Quản Lí Sách"
+        tools:layout="@layout/fragment_sach_fragment" />
+    <fragment
+        android:id="@+id/nav_ThanhVien"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.ui.ThanhVien.Fragment_Thanh_Vien"
+        android:label="Quản Lí Thành Viên"
+        tools:layout="@layout/fragment__thanh__vien_fragment" />
+    <fragment
+        android:id="@+id/nav_ThongKe"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.ui.ThongKe.Fragment_ThongKe"
+        android:label="Thống Kê"
+        tools:layout="@layout/fragment__thong_ke" />
+    <fragment
+        android:id="@+id/nav_DoanhThu"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.ui.DoanhThu.Fragment_DoanhThu"
+        android:label="Doanh Thu"
+        tools:layout="@layout/fragment__doanh_thu" />
+    <fragment
+        android:id="@+id/nav_TaoTaiKhoan"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.Login.Fragment_Tao_Tai_Khoan"
+        android:label="Tạo Tài Khoản"
+        tools:layout="@layout/fragment__tao__tai__khoan" />
+    <fragment
+        android:id="@+id/nav_DoiMatKhau"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.Login.DoiMatKhau"
+        android:label="Đổi Mật Khẩu"
+        tools:layout="@layout/fragment_doi_mat_khau" />
+    <fragment
+        android:id="@+id/nav_DangXuat"
+        android:name="com.example.duanmau_mob2041_ytdnph12917.ui.PhieuMuon.Fragment_Phieu_Muon"
+        tools:layout="@layout/fragment__phieu__muon_fragment" />
+
+
+</navigation>

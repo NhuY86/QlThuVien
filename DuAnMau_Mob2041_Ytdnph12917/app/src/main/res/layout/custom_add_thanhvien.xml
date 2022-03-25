@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/thanhvien" />
+
+    <EditText
+        android:id="@+id/ed_ten_thanh_vien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Tên Thành Viên"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/ed_nam_sinh_thanh_vien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="Năm Sinh"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_ten_thanh_vien" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_nam_sinh_thanh_vien">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_them_tv_add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Thêm" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_huy_tv_add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="Hủy" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
